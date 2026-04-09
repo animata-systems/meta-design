@@ -34,7 +34,7 @@
 
 ## Проекция: репликация заголовков по p2p
 
-Эта проекция показывает **поведение репликации**, отделённое от authority. Publisher выпускает подписанный заголовок; relays и stewards его проверяют и расходятся гипотетическими пирами; client sandboxes фильтруют, что им интересно. Это transport-and-availability картина, а не модель разрешений.
+Эта проекция показывает **поведение репликации**, отделённое от authority. Publisher выпускает подписанный заголовок; relays и stewards его проверяют и расходятся гипотетическими пирами; клиентские хосты Corazon фильтруют, что им интересно. Это transport-and-availability картина, а не модель разрешений.
 
 ```mermaid
 flowchart TD
@@ -42,8 +42,8 @@ flowchart TD
     H --> R1["Relay Node A"]
     H --> R2["Relay Node B"]
     H --> R3["Steward Node"]
-    H --> C1["Client Sandbox 1"]
-    H --> C2["Client Sandbox 2"]
+    H --> C1["Client Host 1"]
+    H --> C2["Client Host 2"]
 
     R1 --> V1["Verify signature + validity"]
     R2 --> V2["Verify signature + validity"]
@@ -66,7 +66,7 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    S["Sandbox Node"] --> Q{"Node role?"}
+    S["Corazon Node"] --> Q{"Node role?"}
 
     Q -- Client / Listener --> A["Reads relevant headers"]
     A --> B["Fetches payloads"]

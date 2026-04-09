@@ -8,7 +8,7 @@
 
 | Файл | О чём |
 |---|---|
-| `01-layers.md` | Пять слоёв системы: идентичность/authority, server control, header log, payload store, sandbox. Почему они отделены друг от друга. |
+| `01-layers.md` | Пять слоёв системы: идентичность/authority, server control, header log, payload store, Corazon Host. Почему они отделены друг от друга. |
 | `02-governance-and-authority.md` | Root Authority, Delegated Authority, одношаговая нетранзитивная делегация, принцип «root управляет будущей легитимностью, а не прошлыми фактами». |
 | `03-identity-and-participation.md` | Три типа идентичности: participant, node, app. Почему «пишет participant, а доставляет node» — это не мелочь. |
 | `04-node-roles.md` | Четыре роли узлов: client/listener, relay, steward, authority. Почему участие в сети ≠ governance permission, а репликация ≠ authority. |
